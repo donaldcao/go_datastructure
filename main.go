@@ -1,16 +1,16 @@
 package main
 
 import (
-	"go-datastructure/Linear"
+	"fmt"
+	linear "go-datastructure/Linear"
 )
 
 func main() {
+	var set *linear.Set = &linear.Set{}
+	set.New()
+	set.AddElement(1)
+	set.AddElement(2)
+	fmt.Println(set)
+	fmt.Println(set.ContainsElement(1))
 
-
-	var list Linear.LinkedList
-	list.AddToHeader(1)
-	list.AddToHeader(3)
-	list.AddToEnd(5)
-	list.AddAfter(1, 7)
-	list.IterateList()
 }
